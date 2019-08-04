@@ -1,0 +1,26 @@
+#实现如1234->4321
+a_1=input("请输入一个数，我们会得到它颠倒过来的数：")
+a=abs(int(a_1))
+# print("a的值是{},它的类型是{}",format(a,type(a)))
+def dao(a):
+#建立一个空的列表把它保存起来,把除完的数保存下来
+	L = []
+	n = 0
+	if a>=10:
+		while a in range(10,1000000000):
+			#得到最后一位
+			b = a%10
+			a=int(a/10)
+			L.append(b)
+			n=n+1
+		else:
+			b=b-1
+			L.append(b)
+			n=n+1
+	else:
+		L.append(a)
+		n=n+1
+	print("这是{}位数".format(n))
+	return L
+print("结果是:{}".format(dao(a)))
+print()
