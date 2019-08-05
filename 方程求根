@@ -1,0 +1,9 @@
+import cmath
+a=float(input('请输入方程ax**2+bx+c中a的值：'))
+b=float(input('请输入方程ax**2+bx+c中b的值：'))
+c=float(input('请输入方程ax**2+bx+c中c的值：'))
+d=cmath.sqrt(b**2-4*a*c)
+console1=(-b+d)/(2*a)
+console2=(-b-d)/(2*a)
+print(console1)
+print(console2)
