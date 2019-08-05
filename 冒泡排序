@@ -1,0 +1,12 @@
+def bubbleSort(arr):
+	n=len(arr)
+	#遍历整个数组
+	for i in range(n):
+		for j in range(0,n-i-1):
+			if arr[j]>arr[j+1]:
+				arr[j],arr[j+1]=arr[j+1],arr[j]
+arr=[46,25,14,23,58,95,6,2,1,75,45,26]
+bubbleSort(arr)
+print("排序后的数组：")
+for i in arr:
+	print(i)
