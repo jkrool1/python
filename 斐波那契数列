@@ -1,0 +1,12 @@
+import math
+num=abs(int(input("请输入项数：")))
+num_1 = 0
+num_2 = 1
+count = 2
+print(num_1,end=",")
+while count<=num :
+	s=num_1+num_2
+	print(s,end=",")
+	num_1=num_2
+	num_2=s
+	count=count+1
